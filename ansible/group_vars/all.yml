@@ -214,8 +214,8 @@ om_rabbitmq_cacert: "{{ rabbitmq_cacert }}"
 ####################
 # Networking options
 ####################
-network_interface: "eth0"
-neutron_external_interface: "eth0"
+network_interface: "{{ network_interface }}"
+neutron_external_interface: "{{ neutron_external_interface }}"
 kolla_external_vip_interface: "{{ network_interface }}"
 api_interface: "{{ network_interface }}"
 storage_interface: "{{ network_interface }}"
